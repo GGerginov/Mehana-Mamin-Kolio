@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{fragments/head}"/>
+</head>
+
+<body>
+<div class="preloader">
+    <img src="/images/preloader.gif" alt="preloader" class="img-fluid">
+</div>
+<!-- Header Start -->
+
+<header class="navigation ">
+    <th:block th:include="~{fragments/header}"/>
+</header>
+
+<!-- Header Close -->
+<section class="section-header bg-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h1 class="text-capitalize mb-4 font-lg text-white">About us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Slider main container -->
+<section class="instgram position-relative">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <h3 class="insta-title">@Instagram</h3>
+
+            <div class="swiper-container" id="gallery-slider">
+                <!-- for instagram post remove comments from bottom line and replace your user id and access token -->
+                <!-- <div class="swiper-wrapper" id="instafeed" data-userId="4044026246" data-accessToken="4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17"></div> -->
+
+                <!-- this is static images. after setup instagram, remove this bottom code to the end -->
+                <div class="swiper-wrapper" id="instafeed">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-4.jpg">
+                            <img src="../static/images/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-3.jpg">
+                            <img src="../static/images/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-5.jpg">
+                            <img src="../static/images/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-7.jpg">
+                            <img src="../static/images/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-1.jpg">
+                            <img src="../static/images/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide ">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-2.jpg">
+                            <img src="../static/images/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-3.jpg">
+                            <img src="../static/images/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-4.jpg">
+                            <img src="../static/images/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popup-gallery" href="../static/images/gallery/gallery-5.jpg">
+                            <img src="../static/images/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="section footer">
+    <th:block th:include="~{fragments/footer}"/>
+</footer>
+
+<section class="footer-btm py-3">
+    <th:block th:include="~{fragments/footerSection}"/>
+</section>
+
+<th:block th:include="~{fragments/script}"/>
+
+</body>
+
+</html>
