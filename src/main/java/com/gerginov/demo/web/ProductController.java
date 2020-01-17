@@ -15,4 +15,11 @@ public class ProductController extends BaseController {
 
         return super.view("menu");
     }
+
+    @GetMapping("/cart")
+    public ModelAndView getCart(){
+
+
+        return super.view("cart");
+    }
 }
